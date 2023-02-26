@@ -1,0 +1,23 @@
+<h1>Alunos cadastrados</h1>
+<div class="lista">
+  <%= @aluno.each do |a|  %>
+      <h2>Nome: </h2>
+      <%= a.nome %>
+      <h2>Sobrenome: </h2>
+      <%= a.sobrenome  %>
+      <h2>CPF: </h2>
+      <%= a.cpf %>
+      <h2>Email: </h2>
+      <%= a.email %>
+      <h2>Telefone: </h2>
+      <%= a.telefone %>
+      <h2>CEP: </h2>
+      <%= a.cep %>
+      <h2>Endereço: </h2>
+      <%= a.endereco %>
+  <% end %>
+
+  <div>
+    <%= link_to 'Voltar', root_path %>
+  </div>
+</div>

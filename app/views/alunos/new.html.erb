@@ -1,0 +1,43 @@
+<center>
+  <h1>Cadastro de Aluno</h1>
+  <%= form_with(model: @alunos) do |a| %>
+    <div>
+      <%= a.label :nome, style: "display: block" %>
+      <%= a.text_field :nome %>
+    </div>
+    <div>
+      <%= a.label :sobrenome, style: "display: block" %>
+      <%= a.text_field :sobrenome %>
+    </div>
+
+    <div>
+      <%= a.label :cpf, style: "display: block" %>
+      <%= a.text_field :cpf %>
+    </div>
+    <div>
+      <%= a.label :email, style: "display: block" %>
+      <%= a.text_field :email %>
+    </div>
+
+    <div>
+      <%= a.label :telefone, style: "display: block" %>
+      <%= a.text_field :telefone %>
+    </div>
+    <div>
+      <%= a.label :cep, style: "display: block" %>
+      <%= a.text_field :cep %>
+    </div>
+
+    <div>
+      <%= a.label :endereco, style: "display: block" %>
+      <%= a.text_field :endereco %>
+    </div>
+
+    <div>
+      <%= a.submit  "Salvar" %>
+    </div>
+    <div class="botão">
+    <%= link_to 'Voltar', root_path %>
+    </div>
+  <% end %>
+<center>
